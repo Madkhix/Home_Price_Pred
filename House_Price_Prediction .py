@@ -27,7 +27,7 @@ df = df_2.copy()
 
 print(df.columns)
 
-# Sayısal değişkenler arasındaki korelasyonları görselleştirme
+# Visualize views between numeric variables
 plt.figure(figsize=(10,8))
 sns.heatmap(df.corr(), cmap="RdBu")
 plt.title("Correlations Between Variables", size=15)
