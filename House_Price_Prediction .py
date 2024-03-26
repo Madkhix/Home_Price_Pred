@@ -35,7 +35,7 @@ plt.show()
 
 n_cpus = multiprocessing.cpu_count()
 
-# Çalışmak istediğimiz sütunları alıyoruz
+# In exchange for working columns
 important_num_cols = list(df.corr()["price"][(df.corr()["price"] > 0.50) | (df.corr()["price"] < -0.50)].index)
 cat_cols = ["city","district", "neighbourhood", "type", "m", "mg", "room", "age", "heat", "site",
              "furniture", "bath", "floor"]
