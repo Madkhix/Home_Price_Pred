@@ -69,7 +69,7 @@ sns.jointplot(x=df["bath"], y=df["price"], kind="kde")
 sns.jointplot(x=df["floor"], y=df["price"], kind="kde")
 plt.show()
 
-# Bağımlı ve Bağımsız değişkenleri ayırıyoruz
+# Separate dependent and independent variables
 X = df.drop(["price"], axis=1)
 y = df["price"]
 
