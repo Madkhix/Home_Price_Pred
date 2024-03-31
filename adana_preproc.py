@@ -12,7 +12,7 @@ db = mysql.connector.connect(
 
 df = pd.read_sql('SELECT * FROM real_estate', con=db)
 
-# MySQL bağlantısını kapatma
+# Closing MySQL connection
 db.close()
 
 # gereksiz verileri kaldırıyoruz
