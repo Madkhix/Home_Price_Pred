@@ -15,7 +15,7 @@ df = pd.read_sql('SELECT * FROM real_estate', con=db)
 # Closing MySQL connection
 db.close()
 
-# gereksiz verileri kaldırıyoruz
+# removing unnecessary data
 df.drop("date", axis = 1, inplace = True)
 df.drop("up_date", axis = 1, inplace = True)
 df.drop('rsID', axis=1, inplace=True)
