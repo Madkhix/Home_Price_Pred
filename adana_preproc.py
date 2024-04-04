@@ -47,7 +47,7 @@ df_2 = df.rename(columns = {"0":"price",
                      "17":"usingStatus",
                      "18":"investment"})
 
-# verilerimizi inceliyoruz
+#examining our data
 print(df_2.head())
 print(df_2.columns)
 print(df_2.neighbourhood.value_counts())
