@@ -54,7 +54,7 @@ print(df_2.neighbourhood.value_counts())
 
 
 # 0
-# String dönüşümü
+# String conversion
 df_2['price'] = df_2['price'].astype(str)
 
 # fiyat verilerini inceliyoruz
