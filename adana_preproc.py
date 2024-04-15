@@ -57,7 +57,7 @@ print(df_2.neighbourhood.value_counts())
 # String conversion
 df_2['price'] = df_2['price'].astype(str)
 
-# fiyat verilerini inceliyoruz
+# examining the price regime
 print(df_2.price.value_counts())
 # "TL" karakterini kaldırma
 df_2['price'] = df_2['price'].str.replace('TL', '')
