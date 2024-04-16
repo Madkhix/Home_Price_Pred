@@ -59,7 +59,7 @@ df_2['price'] = df_2['price'].astype(str)
 
 # examining the price regime
 print(df_2.price.value_counts())
-# "TL" karakterini kaldırma
+# Remove "TL" character
 df_2['price'] = df_2['price'].str.replace('TL', '')
 
 # "." karakterlerini kaldırma
