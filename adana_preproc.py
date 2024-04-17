@@ -62,7 +62,7 @@ print(df_2.price.value_counts())
 # Remove "TL" character
 df_2['price'] = df_2['price'].str.replace('TL', '')
 
-# "." karakterlerini kaldırma
+# Remove "." character
 df_2['price'] = df_2['price'].str.replace('.', '')
 print(df_2.price.value_counts())
 
