@@ -66,7 +66,7 @@ df_2['price'] = df_2['price'].str.replace('TL', '')
 df_2['price'] = df_2['price'].str.replace('.', '')
 print(df_2.price.value_counts())
 
-# Sayısal olmayan karakterleri kaldırma
+# Removal of non-numeric characters
 # df_2['price'] = df_2['price'].str.replace(r'arrow_downward|%\d+', '', regex=True)
 
 # print(df_2.price.value_counts())
