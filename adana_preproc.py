@@ -73,7 +73,7 @@ print(df_2.price.value_counts())
 
 
 # 1
-# mg verilerimizi inceliyoruz
+# examine our mg data
 print(df_2.mg.value_counts())
 # m2 yazan yerleri kaldırıyoruz.
 df_2["mg"] = df_2.mg.str[:-3]
