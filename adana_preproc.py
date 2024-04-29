@@ -75,7 +75,7 @@ print(df_2.price.value_counts())
 # 1
 # examine our 'mg' data
 print(df_2.mg.value_counts())
-# We are removing the places that say m2.
+# removing the places that say m2.
 df_2["mg"] = df_2.mg.str[:-3]
 
 # 2
@@ -85,7 +85,7 @@ print(df_2.m.value_counts())
 df_2["m"] = df_2.m.str[:-3]
 
 # 3
-# oda sayılarımızı inceliyoruz
+# reviewing our room numbers
 # Oda yazan yerleri kaldırıyoruz
 print(df_2.room.value_counts())
 df_2.loc[df_2.room == "1 Oda", "room"] = "1" 
