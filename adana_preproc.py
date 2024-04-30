@@ -86,7 +86,7 @@ df_2["m"] = df_2.m.str[:-3]
 
 # 3
 # reviewing our room numbers
-# Oda yazan yerleri kaldırıyoruz
+# removing the places that say "Oda"
 print(df_2.room.value_counts())
 df_2.loc[df_2.room == "1 Oda", "room"] = "1" 
 df_2.loc[df_2.room == "5 Oda", "room"] = "5" 
