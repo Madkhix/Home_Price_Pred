@@ -103,7 +103,7 @@ df_2.loc[df_2.age == "0 (Yeni)", "age"] = "0"
 
 
 # 5
-# konut katını inceliyoruz
+#examining floor
 print(df_2.floor.value_counts())
 # sayısı belirli olmayanları kaldırıyoruz
 df_2 = df_2[df_2['floor'] != ""]
