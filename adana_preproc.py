@@ -98,7 +98,7 @@ df_2.loc[df_2.room == "Stüdyo", "room"] = "1"
 # 4
 # examine building ages
 print(df_2.age.value_counts())
-# bu şekilde yazan bina yaşını sıfır yapıyoruz
+# we change the building age written like "0 (Yeni)"
 df_2.loc[df_2.age == "0 (Yeni)", "age"] = "0"
 
 
