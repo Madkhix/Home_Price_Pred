@@ -71,7 +71,6 @@ print(df_2.price.value_counts())
 
 # print(df_2.price.value_counts())
 
-
 # 1
 # examine our 'mg' data
 print(df_2.mg.value_counts())
@@ -105,7 +104,7 @@ df_2.loc[df_2.age == "0 (Yeni)", "age"] = "0"
 # 5
 #examining floor
 print(df_2.floor.value_counts())
-# sayısı belirli olmayanları kaldırıyoruz
+# remove those whose number is unknown
 df_2 = df_2[df_2['floor'] != ""]
 # verileri düzenliyoruz
 df_2.loc[df_2.floor == "Yüksek Giriş", "floor"] = "Giris"
