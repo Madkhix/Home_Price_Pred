@@ -106,7 +106,7 @@ df_2.loc[df_2.age == "0 (Yeni)", "age"] = "0"
 print(df_2.floor.value_counts())
 # remove those whose number is unknown
 df_2 = df_2[df_2['floor'] != ""]
-# verileri düzenliyoruz
+# edit the data
 df_2.loc[df_2.floor == "Yüksek Giriş", "floor"] = "Giris"
 df_2.loc[df_2.floor == "Düz Giriş", "floor"] = "Giris"
 df_2.loc[df_2.floor == "Müstakil.Kat", "floor"] = "Giris"
