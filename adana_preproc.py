@@ -168,7 +168,7 @@ df_2.loc[df_2.floor == "Kot 3 (-3).Kat" , "floor"] = "-3"
 
 print(df_2.floor.value_counts())
 
-# bina katını inceliyoruz
+#examine the topFloor
 print(df_2.topFloor.value_counts())
 
 # konut ısıtma türünü inceliyoruz
