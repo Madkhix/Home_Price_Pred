@@ -171,7 +171,7 @@ print(df_2.floor.value_counts())
 #examine the topFloor
 print(df_2.topFloor.value_counts())
 
-# konut ısıtma türünü inceliyoruz
+# examine types of residential heating
 print(df_2.heat.value_counts())
 
 
