@@ -179,7 +179,7 @@ print(df_2.heat.value_counts())
 print(df_2.bath.value_counts())
 df_2.loc[df_2.bath == "Yok", "bath"] = '0'
 #df_2.loc[df_2.bath == "6+", "bath"] = 6
-# sayısı belirli olmayanları kaldırıyoruz
+# remove those whose number is not specific
 df_2 = df_2[df_2['bath'] != ""]
 print(df_2.bath.value_counts())
 
