@@ -184,7 +184,7 @@ df_2 = df_2[df_2['bath'] != ""]
 print(df_2.bath.value_counts())
 
 
-# eşyalı etiketi içerisindeki farklı başlıkları inceliyoruz
+# examine the different titles within the furniture tag
 print(df_2.furniture.unique())
 # eşyalı boş ya da null olan kaç veri olduğuna bakıyoruz
 print(df_2.furniture.value_counts())
