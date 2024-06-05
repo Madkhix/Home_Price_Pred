@@ -341,11 +341,10 @@ unique_investment = df['investment'].unique()
 investment_encoder = LabelEncoder()
 label_encoded_investment = investment_encoder.fit_transform(unique_investment)
 
-# transform işlemi yaparak etiketleme yapmış oluruz.
+# By performing a transform operation, we accomplish labeling.
 df['city'] = city_encoder.transform(df['city'])
 
 # etiketlediğimiz verilerin neler olduğuna bakarız.
-
 print(df_3.city.unique())
 
 # Bu şekilde hepsi için fit_transform işlemi yapıyoruz.
@@ -365,8 +364,6 @@ df['category'] = category_encoder.transform(df['category'])
 df['credit'] = credit_encoder.transform(df['credit'])
 df['usingStatus'] = usingStatus_encoder.transform(df['usingStatus'])
 df['investment'] = investment_encoder.transform(df['investment'])
-
-
 
 city_dict = dict(zip(unique_cities, label_encoded_cities))
 district_dict = dict(zip(unique_districts, label_encoded_districts))
