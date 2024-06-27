@@ -186,7 +186,7 @@ print(df_2.bath.value_counts())
 
 # examine the different titles within the furniture tag
 print(df_2.furniture.unique())
-# eşyalı boş ya da null olan kaç veri olduğuna bakıyoruz
+# we are looking at how many data items are empty or null
 print(df_2.furniture.value_counts())
 # eşyalı ya da boş olduğunu belirtmeyen evleri boş olarak alıyoruz
 df_2.loc[df_2.furniture == "", "furniture"] = "Boş" 
