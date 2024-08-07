@@ -188,7 +188,7 @@ print(df_2.bath.value_counts())
 print(df_2.furniture.unique())
 # we are looking at how many data items are empty or null
 print(df_2.furniture.value_counts())
-# eşyalı ya da boş olduğunu belirtmeyen evleri boş olarak alıyoruz
+# houses that are not stated as furnished or empty are purchased as empty
 df_2.loc[df_2.furniture == "", "furniture"] = "Boş" 
 print(df_2.furniture.value_counts())
 
