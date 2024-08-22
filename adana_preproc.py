@@ -192,7 +192,7 @@ print(df_2.furniture.value_counts())
 df_2.loc[df_2.furniture == "", "furniture"] = "Boş" 
 print(df_2.furniture.value_counts())
 
-# konutların site içerisinde olup olmadığını kontrol ediyoruz
+# we check whether the residences are within the site or not
 print(df_2.site.value_counts())
 
 # konutların krediye uygun olup olmadığını kontrol ediyoruz
