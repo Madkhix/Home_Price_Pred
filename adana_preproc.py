@@ -195,7 +195,7 @@ print(df_2.furniture.value_counts())
 # we check whether the residences are within the site or not
 print(df_2.site.value_counts())
 
-# konutların krediye uygun olup olmadığını kontrol ediyoruz
+# we check whether the houses are suitable for loans
 print(df_2.credit.value_counts())
 # bilinmiyor olan veri türlerini krediye uygun değile çeviriyoruz
 df_2.loc[df_2.credit == "Bilinmiyor", "credit"] = "Krediye Uygun Değil" 
