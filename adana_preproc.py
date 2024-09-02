@@ -197,7 +197,7 @@ print(df_2.site.value_counts())
 
 # we check whether the houses are suitable for loans
 print(df_2.credit.value_counts())
-# bilinmiyor olan veri türlerini krediye uygun değile çeviriyoruz
+# converting known data types to non-creditworthy
 df_2.loc[df_2.credit == "Bilinmiyor", "credit"] = "Krediye Uygun Değil" 
 df_2.loc[df_2.credit == "KREDIYE UYGUN", "credit"] = "Krediye Uygun" 
 
