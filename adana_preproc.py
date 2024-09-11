@@ -344,7 +344,7 @@ label_encoded_investment = investment_encoder.fit_transform(unique_investment)
 # By performing a transform operation, we accomplish labeling.
 df['city'] = city_encoder.transform(df['city'])
 
-# etiketlediğimiz verilerin neler olduğuna bakarız.
+#We look at what happens in the things we tag.
 print(df_3.city.unique())
 
 # Bu şekilde hepsi için fit_transform işlemi yapıyoruz.
